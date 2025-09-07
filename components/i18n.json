@@ -1,0 +1,170 @@
+{
+  "ru": {
+    "brand": "Igor Smirnov",
+    "nav": {
+      "about": "Обо мне",
+      "business": "Бизнес",
+      "education": "Образование",
+      "contact": "Контакты"
+    },
+    "hero_badge": "Вроцлав · Онлайн/Очно",
+    "hero_title": "Игорь Смирнов",
+    "hero_sub": "Гештальт-терапевт. Индивидуально, для пар и бизнеса. Опыт предпринимателя с 2006 года.",
+    "cta_book": "Записаться",
+    "cta_business": "Для бизнеса",
+    "about_title": "Обо мне",
+    "about_p1": "Психолог (гештальт-подход), работаю с травмой, отношениями, кризисами. Живу и практикую во Вроцлаве. Индивидуально, парно, группами.",
+    "about_p2": "Предприниматель с 2006 года: в Беларуси — дистрибуция ГСМ и тех. химии с партнёрами Exxon Mobil, BP/Castrol, SK Lubricants, Henkel, Donaldson; построение и автоматизация каналов, финансы, стратегия.",
+    "work_title": "С чем я работаю",
+    "work_items": [
+      "Стресс, выгорание, тревога",
+      "Кризисы, утраты, адаптация",
+      "Отношения, границы, зависимости",
+      "Переезд и эмиграция",
+      "Супервизия, личная терапия",
+      "Команды и лидеры"
+    ],
+    "reviews_title": "Отзывы",
+    "biz_title": "Консультации для бизнеса",
+    "biz_hero": "Предприниматель с 2006 года. Дистрибуция ГСМ и тех. химии в РБ (Exxon Mobil, BP/Castrol, SK Lubricants, Henkel, Donaldson). Сферы: стратегия, финансы, автоматизация дистрибуции, команды.",
+    "biz_cards": [
+      [
+        "Стратегия и P&L",
+        "Финмодель, юнит-экономика, приоритеты, KPI."
+      ],
+      [
+        "Дистрибуция",
+        "Каналы, маршруты, склад, CRM, автоматизация."
+      ],
+      [
+        "Команда",
+        "Роли, обратная связь, 1:1, OKR, обучение."
+      ]
+    ],
+    "edu_title": "Образование и сертификаты",
+    "contact_title": "Контакты",
+    "addr_label": "Адрес",
+    "address": "Kazimierza Wielkiego 67-118, Wrocław, Poland",
+    "phone_label": "Телефон",
+    "social_label": "Соцсети",
+    "form_title": "Запись на консультацию",
+    "form_name": "Имя",
+    "form_email": "Email",
+    "form_phone": "Телефон (необязательно)",
+    "form_message": "Кратко о запросе",
+    "form_submit": "Отправить",
+    "form_note": "Отправляя форму, вы соглашаетесь с обработкой персональных данных для ответа на запрос."
+  },
+  "en": {
+    "brand": "Igor Smirnov",
+    "nav": {
+      "about": "About",
+      "business": "Business",
+      "education": "Education",
+      "contact": "Contacts"
+    },
+    "hero_badge": "Wrocław · Online/Offline",
+    "hero_title": "Igor Smirnov",
+    "hero_sub": "Gestalt therapist. Individual, couples, business. Entrepreneur since 2006.",
+    "cta_book": "Book a session",
+    "cta_business": "For business",
+    "about_title": "About me",
+    "about_p1": "Gestalt therapist working with trauma, relationships and life crises. Based in Wrocław. In-person and online; individual, couples, groups.",
+    "about_p2": "Entrepreneur since 2006: in Belarus — distribution in fuels, lubricants and technical chemistry with Exxon Mobil, BP/Castrol, SK Lubricants, Henkel, Donaldson; distribution automation, finance, strategy.",
+    "work_title": "What I work with",
+    "work_items": [
+      "Stress, burnout, anxiety",
+      "Crises, loss, adaptation",
+      "Relationships, boundaries, addictions",
+      "Relocation & migration",
+      "Supervision, personal therapy",
+      "Teams & leadership"
+    ],
+    "reviews_title": "Testimonials",
+    "biz_title": "Business consulting",
+    "biz_hero": "Entrepreneur since 2006. Distribution in fuels & technical chemistry (Exxon Mobil, BP/Castrol, SK Lubricants, Henkel, Donaldson). Strategy, finance, distribution automation, teams.",
+    "biz_cards": [
+      [
+        "Strategy & P&L",
+        "Financial model, unit economics, priorities, KPI."
+      ],
+      [
+        "Distribution",
+        "Channels, routes, warehouse, CRM, automation."
+      ],
+      [
+        "Team",
+        "Roles, feedback, 1:1s, OKR, learning."
+      ]
+    ],
+    "edu_title": "Education & certificates",
+    "contact_title": "Contacts",
+    "addr_label": "Address",
+    "address": "Kazimierza Wielkiego 67-118, Wrocław, Poland",
+    "phone_label": "Phone",
+    "social_label": "Social",
+    "form_title": "Book a session",
+    "form_name": "Name",
+    "form_email": "Email",
+    "form_phone": "Phone (optional)",
+    "form_message": "Your request",
+    "form_submit": "Send",
+    "form_note": "By submitting you agree to the processing of your data to reply to your request."
+  },
+  "pl": {
+    "brand": "Igor Smirnov",
+    "nav": {
+      "about": "O mnie",
+      "business": "Biznes",
+      "education": "Edukacja",
+      "contact": "Kontakt"
+    },
+    "hero_badge": "Wrocław · Online/Offline",
+    "hero_title": "Igor Smirnov",
+    "hero_sub": "Terapeuta Gestalt. Sesje indywidualne, dla par i biznesu. Przedsiębiorca od 2006 r.",
+    "cta_book": "Umów wizytę",
+    "cta_business": "Dla biznesu",
+    "about_title": "O mnie",
+    "about_p1": "Terapeuta Gestalt – praca z traumą, relacjami i kryzysami. Wrocław. Sesje stacjonarne i online: indywidualne, dla par, grupowe.",
+    "about_p2": "Przedsiębiorca od 2006 r.: na Białorusi – dystrybucja paliw i chemii technicznej z Exxon Mobil, BP/Castrol, SK Lubricants, Henkel, Donaldson; automatyzacja dystrybucji, finanse, strategia.",
+    "work_title": "W czym pomagam",
+    "work_items": [
+      "Stres, wypalenie, lęk",
+      "Kryzysy, strata, adaptacja",
+      "Relacje, granice, uzależnienia",
+      "Relokacja i migracja",
+      "Superwizja, terapia własna",
+      "Zespoły i przywództwo"
+    ],
+    "reviews_title": "Opinie",
+    "biz_title": "Konsulting biznesowy",
+    "biz_hero": "Przedsiębiorca od 2006 r. Dystrybucja paliw i chemii technicznej (Exxon Mobil, BP/Castrol, SK Lubricants, Henkel, Donaldson). Strategia, finanse, automatyzacja dystrybucji, zespoły.",
+    "biz_cards": [
+      [
+        "Strategia i P&L",
+        "Model finansowy, unit economics, priorytety, KPI."
+      ],
+      [
+        "Dystrybucja",
+        "Kanały, trasy, magazyn, CRM, automatyzacja."
+      ],
+      [
+        "Zespół",
+        "Role, feedback, 1:1, OKR, rozwój."
+      ]
+    ],
+    "edu_title": "Edukacja i certyfikaty",
+    "contact_title": "Kontakt",
+    "addr_label": "Adres",
+    "address": "Kazimierza Wielkiego 67-118, Wrocław, Polska",
+    "phone_label": "Telefon",
+    "social_label": "Sociale",
+    "form_title": "Umów wizytę",
+    "form_name": "Imię",
+    "form_email": "Email",
+    "form_phone": "Telefon (opcjonalnie)",
+    "form_message": "Krótko o potrzebie",
+    "form_submit": "Wyślij",
+    "form_note": "Wysyłając formularz, wyrażasz zgodę na przetwarzanie danych w celu odpowiedzi."
+  }
+}

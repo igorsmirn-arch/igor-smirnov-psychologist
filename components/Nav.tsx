@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { useI18n } from './LangProvider';
+import { useI18n } from '../lib/i18n';
 import LangSwitch from './LangSwitch';
 
 export default function Nav() {

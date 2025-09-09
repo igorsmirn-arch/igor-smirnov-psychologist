@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { useI18n } from './LangProvider';
+import { useI18n } from '../lib/i18n';
 import type { Locale } from '../lib/i18n';
 
 export default function LangSwitch(){

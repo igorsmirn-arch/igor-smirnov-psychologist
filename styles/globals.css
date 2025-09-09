@@ -1,20 +1,37 @@
-*{box-sizing:border-box}
-:root{color-scheme:light}
-html,body{margin:0;padding:0}
-body{
-  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-  background:#f7fafc; color:#111; line-height:1.6;
+@tailwind base; @tailwind components; @tailwind utilities;
+
+/* Системная тёмная/светлая тема */
+:root { color-scheme: light dark; }
+
+/* Фон страницы: мягкий градиент */
+body {
+  @apply bg-gradient-to-br from-slate-50 to-indigo-50 dark:from-[#0b0b12] dark:to-[#0e0e17] text-slate-900 dark:text-slate-100;
 }
-a{color:inherit;text-decoration:none}
-.container{max-width:960px;margin:0 auto;padding:24px}
-.nav{
-  position:sticky; top:0; z-index:10;
-  display:flex; align-items:center; justify-content:space-between;
-  padding:12px 24px; background:#fff; border-bottom:1px solid #eee;
+
+/* Сетка и отступы по умолчанию */
+.container { @apply max-w-6xl mx-auto px-4; }
+
+/* Карточки (glassmorphism) */
+.card {
+  @apply rounded-2xl border border-white/40 dark:border-white/10
+         bg-white/60 dark:bg-white/5 backdrop-blur p-5 shadow-sm;
 }
-.nav-links a{margin-left:16px; opacity:.85}
-.nav-links a:hover{opacity:1}
-.footer{background:#fff;border-top:1px solid #eee;color:#555;padding:24px}
-h1{font-size:28px;margin:0 0 12px}
-h2{font-size:22px;margin:24px 0 8px}
-p{margin:0 0 12px}
+
+/* Кнопки */
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-medium;
+}
+.btn-primary {
+  @apply btn bg-black text-white dark:bg-white dark:text-black hover:opacity-90 transition;
+}
+.btn-outline {
+  @apply btn border border-slate-300 dark:border-slate-600 hover:bg-white/60 dark:hover:bg-white/10 transition;
+}
+
+/* Заголовки и текст */
+h1 { @apply text-3xl md:text-4xl font-bold tracking-tight; }
+h2 { @apply text-xl md:text-2xl font-semibold; }
+p  { @apply leading-relaxed; }
+
+/* Блоки секций */
+.section { @apply py-12 md:py-16; }

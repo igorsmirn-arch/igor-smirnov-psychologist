@@ -4,6 +4,9 @@ import { I18nProvider } from '../lib/i18n';
 import Nav from '../components/Nav';
 import CookieConsent from '../components/CookieConsent';
 import AnalyticsGate from '../components/AnalyticsGate';
+import { Inter } from 'next/font/google';
+
+const inter = Inter({ subsets: ['latin', 'cyrillic'], display: 'swap' });
 
 export const metadata = {
   title: 'Igor Smirnov — Psychologist',
@@ -15,10 +18,10 @@ export const metadata = {
 export default function RootLayout({children}:{children:React.ReactNode}){
   return (
     <html lang="ru" suppressHydrationWarning>
-      <body className="bg-white text-black dark:bg-black dark:text-white">
+      <body className={inter.className}>
         <I18nProvider>
           <Nav />
-          {children}
+          <main>{children}</main>
           <CookieConsent />
           <AnalyticsGate />
         </I18nProvider>

@@ -16,7 +16,7 @@ export default function ContactClient() {
         <input required name="name" placeholder={t('form.name') ?? 'Имя'} style={{padding:12, border:'1px solid #ddd', borderRadius:8}} />
         <input required type="email" name="email" placeholder={t('form.email') ?? 'Email'} style={{padding:12, border:'1px solid #ddd', borderRadius:8}} />
         <textarea required name="message" placeholder={t('form.msg') ?? 'Сообщение'} rows={5} style={{padding:12, border:'1px solid #ddd', borderRadius:8}} />
-        <button type="submit" style="padding:12px 16px;border:0;border-radius:10px;background:#111;color:#fff;cursor:pointer;">
+        <button type="submit" style={{ padding: '12px 16px', border: 0, borderRadius: 10, background: '#111', color: '#fff', cursor: 'pointer' }}>
           {t('form.submit') ?? 'Отправить'}
         </button>
       </form>

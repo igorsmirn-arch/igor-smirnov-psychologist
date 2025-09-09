@@ -1,37 +1,29 @@
-@tailwind base; @tailwind components; @tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* Системная тёмная/светлая тема */
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 :root { color-scheme: light dark; }
-
-/* Фон страницы: мягкий градиент */
+html, body, #__next { height: 100%; }
 body {
-  @apply bg-gradient-to-br from-slate-50 to-indigo-50 dark:from-[#0b0b12] dark:to-[#0e0e17] text-slate-900 dark:text-slate-100;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
 }
 
-/* Сетка и отступы по умолчанию */
+/* Background gradient */
+body {
+  @apply bg-white text-black dark:bg-neutral-950 dark:text-neutral-100;
+  background-image:
+    radial-gradient(60rem 60rem at 10% -10%, rgba(79,70,229,.12), transparent),
+    radial-gradient(60rem 60rem at 90% 0%, rgba(236,72,153,.10), transparent);
+}
+
+/* helpers */
 .container { @apply max-w-6xl mx-auto px-4; }
 
-/* Карточки (glassmorphism) */
-.card {
-  @apply rounded-2xl border border-white/40 dark:border-white/10
-         bg-white/60 dark:bg-white/5 backdrop-blur p-5 shadow-sm;
-}
+/* glass card */
+.card-glass { @apply rounded-2xl border border-black/10 dark:border-white/10 bg-white/60 dark:bg-white/5 backdrop-blur shadow-sm; }
 
-/* Кнопки */
-.btn {
-  @apply inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-medium;
-}
-.btn-primary {
-  @apply btn bg-black text-white dark:bg-white dark:text-black hover:opacity-90 transition;
-}
-.btn-outline {
-  @apply btn border border-slate-300 dark:border-slate-600 hover:bg-white/60 dark:hover:bg-white/10 transition;
-}
-
-/* Заголовки и текст */
-h1 { @apply text-3xl md:text-4xl font-bold tracking-tight; }
-h2 { @apply text-xl md:text-2xl font-semibold; }
-p  { @apply leading-relaxed; }
-
-/* Блоки секций */
-.section { @apply py-12 md:py-16; }
+/* sticky nav glass */
+.nav-glass { @apply sticky top-0 z-40 border-b border-black/10 dark:border-white/10 bg-white/70 dark:bg-neutral-950/70 backdrop-blur; }

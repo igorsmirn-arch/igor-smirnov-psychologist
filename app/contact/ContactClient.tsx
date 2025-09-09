@@ -1,15 +1,22 @@
 'use client';
 import { useI18n } from '../../components/LangProvider';
 
+type TFunc = (key: string) => string;
+
+const useSafeT = (): TFunc => {
+  const maybe = useI18n?.() as unknown;
+  return typeof maybe === 'function' ? (maybe as TFunc) : (k: string) => k;
+};
+
 export default function ContactClient() {
-  const i18n = useI18n?.();
-  const t = (key: string) => (typeof i18n === 'function' ? i18n(key) : key);
+  const t = useSafeT();
 
   return (
     <main style={{ padding: 24 }}>
       <h1 style={{ fontSize: 28, marginBottom: 12 }}>
         {t('contact.title') || 'Контакты'}
       </h1>
+
       <form action="https://formspree.io/f/mnqewznz" method="POST" style={{ display: 'grid', gap: 12, maxWidth: 560 }}>
         <input required name="name" placeholder={t('form.name') || 'Имя'}
                style={{ padding: 12, border: '1px solid #ddd', borderRadius: 8 }} />

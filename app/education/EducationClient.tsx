@@ -1,9 +1,15 @@
 'use client';
 import { useI18n } from '../../components/LangProvider';
 
+type TFunc = (key: string) => string;
+
+const useSafeT = (): TFunc => {
+  const maybe = useI18n?.() as unknown;
+  return typeof maybe === 'function' ? (maybe as TFunc) : (k: string) => k;
+};
+
 export default function EducationClient() {
-  const i18n = useI18n?.();
-  const t = (key: string) => (typeof i18n === 'function' ? i18n(key) : key);
+  const t = useSafeT();
 
   return (
     <main style={{ padding: 24 }}>

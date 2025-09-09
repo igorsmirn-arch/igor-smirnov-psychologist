@@ -1,4 +1,4 @@
-import './globals.css';
+import '../styles/globals.css';
 import React from 'react';
 import { I18nProvider } from '../lib/i18n';
 import Nav from '../components/Nav';

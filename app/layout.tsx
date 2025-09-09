@@ -1,6 +1,8 @@
 import '../styles/globals.css';
 import { LangProvider } from '../components/LangProvider';
 import React from 'react';
+import NavBar from '../components/NavBar';
+import SiteFooter from '../components/SiteFooter';
 
 export const metadata = {
   title: 'Igor Smirnov — Psychologist',
@@ -12,16 +14,18 @@ export const metadata = {
     url: 'https://smirnov-igor.com',
     siteName: 'Igor Smirnov',
   },
-  alternates: {
-    languages: { ru: '/ru', pl: '/pl', en: '/en' },
-  },
+  alternates: { languages: { ru: '/ru', pl: '/pl', en: '/en' } },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ru" suppressHydrationWarning>
       <body>
-        <LangProvider>{children}</LangProvider>
+        <LangProvider>
+          <NavBar />
+          <main className="container">{children}</main>
+          <SiteFooter />
+        </LangProvider>
       </body>
     </html>
   );

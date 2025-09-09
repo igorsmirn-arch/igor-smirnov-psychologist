@@ -1,23 +1,20 @@
-:root{--bg:#0e0f13;--panel:#141722;--text:#ECEFF4;--muted:#A3ACC3;--primary:#5AC8FA}
-*{box-sizing:border-box}html,body{margin:0;font-family:system-ui,Segoe UI,Inter,Arial;color:var(--text);background:var(--bg)}
-a{color:var(--primary);text-decoration:none}
-.container{max-width:1120px;margin:0 auto;padding:24px}
-.nav{position:sticky;top:0;z-index:40;background:rgba(20,23,34,.8);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid #1e2230}
-.nav-inner{display:flex;gap:14px;align-items:center;justify-content:space-between;padding:12px 24px}
-.menu a{margin:0 10px;color:#E6EDF3;opacity:.9}
-.hero{min-height:72vh;display:flex;align-items:end;background:url('/assets/images/hero_sun_boat.jpg') center/cover no-repeat;border-bottom:1px solid #202432}
-.hero .panel{background:rgba(0,0,0,.5);padding:28px;border-radius:16px;max-width:720px;margin:48px}
-h1{margin:0 0 10px;font-size:42px}h2{margin:0 0 12px;font-size:28px}
-.lead{font-size:18px;color:var(--muted);line-height:1.6}
-.btn{display:inline-block;padding:12px 18px;border-radius:12px;background:linear-gradient(135deg,#ffd166,#ef476f);color:#111;font-weight:700}
-.section{padding:40px 0}.grid{display:grid;gap:20px}.grid-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.card{background:var(--panel);border:1px solid #202432;border-radius:16px;padding:18px}
-.img-resp{width:100%;height:auto;border-radius:12px}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-.footer{border-top:1px solid #202432;background:#0c0d11;color:#9aa3bd;padding:22px 0;margin-top:40px}
-.badge{display:inline-block;background:#1f2433;color:#aeb7d0;border:1px solid #2a3042;border-radius:999px;padding:6px 12px;font-size:12px;margin-bottom:10px}
-.kv{display:flex;flex-wrap:wrap;gap:20px;align-items:center}.kv img{max-width:420px}
-.slider{position:relative;overflow:hidden;border-radius:16px}.slides{display:flex;transition:transform .5s ease}.slide{min-width:100%;padding:20px;background:var(--panel)}
-.slider .controls{display:flex;justify-content:center;gap:10px;margin-top:12px}.dot{width:10px;height:10px;border-radius:50%;background:#344055;cursor:pointer}.dot.active{background:#5AC8FA}
-.map{width:100%;height:380px;border:0;border-radius:16px}
-@media(max-width:640px){h1{font-size:32px}.hero .panel{margin:16px}}
+*{box-sizing:border-box}
+:root{color-scheme:light}
+html,body{margin:0;padding:0}
+body{
+  font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  background:#f7fafc; color:#111; line-height:1.6;
+}
+a{color:inherit;text-decoration:none}
+.container{max-width:960px;margin:0 auto;padding:24px}
+.nav{
+  position:sticky; top:0; z-index:10;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:12px 24px; background:#fff; border-bottom:1px solid #eee;
+}
+.nav-links a{margin-left:16px; opacity:.85}
+.nav-links a:hover{opacity:1}
+.footer{background:#fff;border-top:1px solid #eee;color:#555;padding:24px}
+h1{font-size:28px;margin:0 0 12px}
+h2{font-size:22px;margin:24px 0 8px}
+p{margin:0 0 12px}

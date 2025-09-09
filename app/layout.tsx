@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import Header from '../components/Header';
 import { LangProvider } from '../components/LangProvider';
 import React from 'react';
 import NavBar from '../components/NavBar';
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ru" suppressHydrationWarning>
       <body>
+        <Header />
         <LangProvider>
           <NavBar />
           <main className="container">{children}</main>

@@ -1,0 +1,6 @@
+{ "nav.about":"Обо мне","nav.services":"Услуги","nav.business":"Бизнес","nav.education":"Образование","nav.blog":"Блог","nav.contact":"Контакты",
+  "hero.title":"Игорь Смирнов — психолог, гештальт-терапевт","hero.lead":"Помогаю людям и командам справляться с кризисами и выгоранием. RU · PL · EN",
+  "cta.book":"Записаться","cta.contact":"Связаться",
+  "business.title":"Бизнес-консалтинг","business.lead":"Дистрибуция ГСМ и теххимии, автоматизация, финансы, стратегия (с 2006).",
+  "education.title":"Образование и подход",
+  "contact.title":"Запись на консультацию","form.name":"Имя","form.email":"Email","form.msg":"Сообщение","form.submit":"Отправить" }

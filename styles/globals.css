@@ -1,73 +1,10 @@
 @tailwind base; @tailwind components; @tailwind utilities;
 
-/* системная тема */
 :root { color-scheme: light dark; }
-
-/* Фон с мягким градиентом + сетка/шум (очень лёгкие) */
-html, body { height: 100%; }
-body {
-  @apply text-black dark:text-white bg-white dark:bg-neutral-950;
-  background-image:
-    radial-gradient(40rem 40rem at 10% -10%, rgba(99,102,241,0.20), transparent 60%),
-    radial-gradient(32rem 32rem at 90% 0%, rgba(217,70,239,0.20), transparent 60%),
-    radial-gradient(24rem 24rem at 20% 100%, rgba(59,130,246,0.14), transparent 60%);
-  background-repeat: no-repeat;
-}
-
-/* Контейнеры */
+* { -webkit-tap-highlight-color: transparent; }
 .container { @apply max-w-6xl mx-auto px-4; }
 
-/* Стеклянные блоки */
-.glass {
-  @apply bg-white/65 dark:bg-white/10 backdrop-blur-xl border border-white/40 dark:border-white/10 shadow-lg;
-}
-
-/* Карточки */
-.card {
-  @apply glass rounded-2xl p-5;
-}
-
-/* Кнопки */
-.btn-primary {
-  @apply inline-flex items-center justify-center px-4 py-2 rounded-xl bg-black text-white dark:bg-white dark:text-black font-medium transition-transform active:scale-[.98];
-}
-.btn-ghost {
-  @apply inline-flex items-center justify-center px-4 py-2 rounded-xl border border-black/10 dark:border-white/20;
-}
-
-/* Типографика */
-h1 { @apply text-3xl md:text-5xl font-extrabold tracking-tight; }
-h2 { @apply text-2xl md:text-3xl font-bold; }
-p.lead { @apply text-base md:text-lg opacity-80; }
-
-/* Нав */
-.nav-wrap {
-  @apply sticky top-3 z-40;
-}
-.nav {
-  @apply glass rounded-2xl py-3;
-}
-.nav-inner {
-  @apply container flex items-center gap-3;
-}
-.brand {
-  @apply text-sm md:text-base font-semibold whitespace-nowrap;
-}
-.nav-menu {
-  @apply hidden md:flex items-center gap-4 ml-auto;
-}
-.nav-actions {
-  @apply flex items-center gap-2 ml-auto md:ml-0;
-}
-
-/* Hero */
-.hero {
-  @apply container mt-8 md:mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 items-center;
-}
-.hero-photo {
-  @apply glass rounded-2xl overflow-hidden aspect-[4/3];
-}
-.hero-cta { @apply flex flex-wrap gap-3 mt-5; }
-
-/* Секция */
-.section { @apply container py-10 md:py-14; }
+html, body { @apply scroll-smooth; }
+h1,h2,h3 { @apply tracking-tight; }
+a { @apply underline-offset-2; }
+.nav a { @apply no-underline; }

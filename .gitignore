@@ -4,3 +4,6 @@ out/
 .vercel/
 .env
 .DS_Store
+
+# TypeScript build cache
+tsconfig.tsbuildinfo

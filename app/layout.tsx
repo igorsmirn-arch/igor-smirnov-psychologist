@@ -5,6 +5,7 @@ import Nav from '../components/Nav';
 import CookieConsent from '../components/CookieConsent';
 import AnalyticsGate from '../components/AnalyticsGate';
 import Footer from '../components/Footer';
+import Footer from '../components/Footer';
 
 export const metadata = {
   title: 'Igor Smirnov — Psychologist',

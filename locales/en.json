@@ -1,43 +1,24 @@
 {
-  "brand": "Igor Smirnov — Psychologist",
-  "nav": { "about": "About", "services": "Services", "business": "Business", "education": "Education", "blog": "Blog", "contact": "Contact" },
-
-  "hero": {
-    "title": "Igor Smirnov — psychologist, Gestalt therapist",
-    "lead": "Individual and corporate work. RU · PL · EN. Online and in Wrocław.",
-    "ctaBook": "Book a consultation",
-    "ctaContact": "Message on Telegram"
-  },
-
-  "services": {
-    "title": "How I can help",
-    "items": [
-      { "t": "Individual therapy", "d": "Anxiety, burnout, life crises, migration, relationships." },
-      { "t": "Couples therapy", "d": "With Tatyana Kozlovskaya. Communication, trust, intimacy." },
-      { "t": "Group therapy", "d": "Support, growth, safe environment." },
-      { "t": "Corporate training", "d": "Resilience, communication, burnout prevention." }
-    ],
-    "more": "Learn more"
-  },
-
-  "approach": {
-    "title": "Education & approach",
-    "bullets": [
-      "Certified Gestalt therapist (EAGT/MGI), TA",
-      "EMBA — Strategic Management",
-      "Engineering Physics; regular therapy & supervision",
-      "Co-founder of PsyConnect"
-    ],
-    "more": "More about experience"
-  },
-
-  "trust": { "title": "Trust & community", "logosAlt": ["EAGT", "MGI", "PsyConnect"] },
-
-  "cta": { "line": "Ready for the first step?", "btn": "Book a consultation" },
-
-  "footer": {
-    "copy": "© 2025 Igor Smirnov · RU · PL · EN",
-    "privacy": "Privacy Policy",
-    "terms": "Terms"
-  }
+  "brand":"Igor Smirnov — Psychologist",
+  "nav":{"about":"About","services":"Services","business":"Business","education":"Education","blog":"Blog","contact":"Contact"},
+  "hero":{"title":"Igor Smirnov — psychologist, Gestalt therapist","lead":"Individual and corporate work. RU · PL · EN. Online and in Wrocław.","ctaBook":"Book a consultation","ctaContact":"Message on Telegram"},
+  "services":{"title":"How I can help","items":[
+    {"t":"Individual therapy","d":"Anxiety, burnout, life crises, migration, relationships."},
+    {"t":"Couples therapy","d":"With Tatyana Kozlovskaya. Communication, trust, intimacy."},
+    {"t":"Group therapy","d":"Support, growth, safe environment."},
+    {"t":"Corporate training","d":"Resilience, communication, burnout prevention."}
+  ]},
+  "approach":{"title":"Education & approach","bullets":[
+    "Certified Gestalt therapist (EAGT/MGI), TA",
+    "EMBA — Strategic Management",
+    "Engineering Physics; regular therapy & supervision",
+    "Co-founder of PsyConnect"
+  ],"more":"More about experience"},
+  "reviews":{"title":"Client feedback","items":[
+    {"name":"Maria K.","role":"Product Manager","text":"I regained stability at work and reduced anxiety."},
+    {"name":"Andrew S.","role":"Founder","text":"Healthier boundaries and better family communication."},
+    {"name":"Anna L.","role":"HR Lead","text":"Practical tools to prevent team burnout."}
+  ]},
+  "cta":{"line":"Ready for the first step?","btn":"Book a consultation"},
+  "footer":{"copy":"© 2025 Igor Smirnov · RU · PL · EN","privacy":"Privacy Policy","terms":"Terms"}
 }

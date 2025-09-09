@@ -1,6 +1,43 @@
-{ "nav.about":"About","nav.services":"Services","nav.business":"Business","nav.education":"Education","nav.blog":"Blog","nav.contact":"Contacts",
-  "hero.title":"Igor Smirnov — psychologist, Gestalt therapist","hero.lead":"I help individuals and teams with crises and burnout. RU · PL · EN",
-  "cta.book":"Book a session","cta.contact":"Contact",
-  "business.title":"Business consulting","business.lead":"Fuels & tech-chem distribution, automation, finance, strategy (since 2006).",
-  "education.title":"Education & approach",
-  "contact.title":"Book a consultation","form.name":"Name","form.email":"Email","form.msg":"Message","form.submit":"Send" }
+{
+  "brand": "Igor Smirnov — Psychologist",
+  "nav": { "about": "About", "services": "Services", "business": "Business", "education": "Education", "blog": "Blog", "contact": "Contact" },
+
+  "hero": {
+    "title": "Igor Smirnov — psychologist, Gestalt therapist",
+    "lead": "Individual and corporate work. RU · PL · EN. Online and in Wrocław.",
+    "ctaBook": "Book a consultation",
+    "ctaContact": "Message on Telegram"
+  },
+
+  "services": {
+    "title": "How I can help",
+    "items": [
+      { "t": "Individual therapy", "d": "Anxiety, burnout, life crises, migration, relationships." },
+      { "t": "Couples therapy", "d": "With Tatyana Kozlovskaya. Communication, trust, intimacy." },
+      { "t": "Group therapy", "d": "Support, growth, safe environment." },
+      { "t": "Corporate training", "d": "Resilience, communication, burnout prevention." }
+    ],
+    "more": "Learn more"
+  },
+
+  "approach": {
+    "title": "Education & approach",
+    "bullets": [
+      "Certified Gestalt therapist (EAGT/MGI), TA",
+      "EMBA — Strategic Management",
+      "Engineering Physics; regular therapy & supervision",
+      "Co-founder of PsyConnect"
+    ],
+    "more": "More about experience"
+  },
+
+  "trust": { "title": "Trust & community", "logosAlt": ["EAGT", "MGI", "PsyConnect"] },
+
+  "cta": { "line": "Ready for the first step?", "btn": "Book a consultation" },
+
+  "footer": {
+    "copy": "© 2025 Igor Smirnov · RU · PL · EN",
+    "privacy": "Privacy Policy",
+    "terms": "Terms"
+  }
+}

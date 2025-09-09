@@ -1,33 +1,27 @@
-import '../styles/globals.css';
-import Header from '../components/Header';
-import { LangProvider } from '../components/LangProvider';
+import './globals.css';
 import React from 'react';
-import NavBar from '../components/NavBar';
-import SiteFooter from '../components/SiteFooter';
+import { I18nProvider } from '../lib/i18n';
+import Nav from '../components/Nav';
+import CookieConsent from '../components/CookieConsent';
+import AnalyticsGate from '../components/AnalyticsGate';
 
 export const metadata = {
   title: 'Igor Smirnov — Psychologist',
-  description: 'Гештальт-терапевт, ТА. Консультации RU/PL/EN. Wrocław.',
+  description: 'Psychologist & Gestalt therapist. RU · PL · EN. Online & Wrocław.',
   metadataBase: new URL('https://smirnov-igor.com'),
-  openGraph: {
-    title: 'Igor Smirnov — Psychologist',
-    description: 'Гештальт-терапевт, ТА. Консультации RU/PL/EN. Wrocław.',
-    url: 'https://smirnov-igor.com',
-    siteName: 'Igor Smirnov',
-  },
-  alternates: { languages: { ru: '/ru', pl: '/pl', en: '/en' } },
+  openGraph: { title: 'Igor Smirnov — Psychologist', url: 'https://smirnov-igor.com', siteName: 'Igor Smirnov' }
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({children}:{children:React.ReactNode}){
   return (
     <html lang="ru" suppressHydrationWarning>
-      <body>
-        <Header />
-        <LangProvider>
-          <NavBar />
-          <main className="container">{children}</main>
-          <SiteFooter />
-        </LangProvider>
+      <body className="bg-white text-black dark:bg-black dark:text-white">
+        <I18nProvider>
+          <Nav />
+          {children}
+          <CookieConsent />
+          <AnalyticsGate />
+        </I18nProvider>
       </body>
     </html>
   );

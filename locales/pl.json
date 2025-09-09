@@ -1,6 +1,43 @@
-{ "nav.about":"O mnie","nav.services":"Usługi","nav.business":"Biznes","nav.education":"Edukacja","nav.blog":"Blog","nav.contact":"Kontakt",
-  "hero.title":"Igor Smirnov — psycholog, terapeuta Gestalt","hero.lead":"Pomagam ludziom i zespołom radzić sobie z kryzysami i wypaleniem. RU · PL · EN",
-  "cta.book":"Umów się","cta.contact":"Kontakt",
-  "business.title":"Konsulting biznesowy","business.lead":"Dystrybucja paliw i chemii technicznej, automatyzacja, finanse, strategia (od 2006).",
-  "education.title":"Wykształcenie i podejście",
-  "contact.title":"Umów konsultację","form.name":"Imię","form.email":"Email","form.msg":"Wiadomość","form.submit":"Wyślij" }
+{
+  "brand": "Igor Smirnov — Psychologist",
+  "nav": { "about": "O mnie", "services": "Usługi", "business": "Biznes", "education": "Edukacja", "blog": "Blog", "contact": "Kontakt" },
+
+  "hero": {
+    "title": "Igor Smirnov — psycholog, terapeuta Gestalt",
+    "lead": "Praca indywidualna i korporacyjna. RU · PL · EN. Konsultacje online i we Wrocławiu.",
+    "ctaBook": "Umów konsultację",
+    "ctaContact": "Kontakt na Telegramie"
+  },
+
+  "services": {
+    "title": "W czym pomagam",
+    "items": [
+      { "t": "Terapia indywidualna", "d": "Lęk, wypalenie, kryzysy, emigracja, relacje." },
+      { "t": "Terapia par", "d": "W duecie z Tatianą Kozłowską. Komunikacja, zaufanie, bliskość." },
+      { "t": "Terapia grupowa", "d": "Wsparcie, rozwój, bezpieczna przestrzeń." },
+      { "t": "Szkolenia dla organizacji", "d": "Odporność (resilience), komunikacja, profilaktyka wypalenia." }
+    ],
+    "more": "Dowiedz się więcej"
+  },
+
+  "approach": {
+    "title": "Wykształcenie i podejście",
+    "bullets": [
+      "Certyfikowany terapeuta Gestalt (EAGT/MGI), TA",
+      "EMBA — zarządzanie strategiczne",
+      "Inżynier-fizyk; regularna terapia i superwizja",
+      "Współzałożyciel PsyConnect"
+    ],
+    "more": "Więcej o doświadczeniu"
+  },
+
+  "trust": { "title": "Zaufanie i społeczność", "logosAlt": ["EAGT", "MGI", "PsyConnect"] },
+
+  "cta": { "line": "Gotowy na pierwszy krok?", "btn": "Umów konsultację" },
+
+  "footer": {
+    "copy": "© 2025 Igor Smirnov · RU · PL · EN",
+    "privacy": "Polityka prywatności (RODO)",
+    "terms": "Regulamin"
+  }
+}

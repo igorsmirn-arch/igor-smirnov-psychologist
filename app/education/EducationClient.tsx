@@ -2,16 +2,18 @@
 import { useI18n } from '../../components/LangProvider';
 
 export default function EducationClient() {
-  const t = useI18n?.() ?? ((k: string) => k);
+  const i18n = useI18n?.();
+  const t = (key: string) => (typeof i18n === 'function' ? i18n(key) : key);
+
   return (
     <main style={{ padding: 24 }}>
       <h1 style={{ fontSize: 28, marginBottom: 12 }}>
-        {t('education.title') ?? 'Образование'}
+        {t('education.title') || 'Образование'}
       </h1>
       <ul style={{ lineHeight: 1.7 }}>
-        <li>{t('education.item1') ?? 'Гештальт-терапия (сертификация)'}</li>
-        <li>{t('education.item2') ?? 'Транзакционный анализ'}</li>
-        <li>{t('education.item3') ?? 'Курсы повышения квалификации'}</li>
+        <li>{t('education.item1') || 'Гештальт-терапия (сертификация)'}</li>
+        <li>{t('education.item2') || 'Транзакционный анализ'}</li>
+        <li>{t('education.item3') || 'Курсы повышения квалификации'}</li>
       </ul>
     </main>
   );

@@ -2,22 +2,24 @@
 import { useI18n } from '../../components/LangProvider';
 
 export default function ContactClient() {
-  const t = useI18n?.() ?? ((k: string) => k);
+  const i18n = useI18n?.();
+  const t = (key: string) => (typeof i18n === 'function' ? i18n(key) : key);
+
   return (
     <main style={{ padding: 24 }}>
       <h1 style={{ fontSize: 28, marginBottom: 12 }}>
-        {t('contact.title') ?? 'Контакты'}
+        {t('contact.title') || 'Контакты'}
       </h1>
       <form action="https://formspree.io/f/mnqewznz" method="POST" style={{ display: 'grid', gap: 12, maxWidth: 560 }}>
-        <input required name="name" placeholder={t('form.name') ?? 'Имя'}
+        <input required name="name" placeholder={t('form.name') || 'Имя'}
                style={{ padding: 12, border: '1px solid #ddd', borderRadius: 8 }} />
-        <input required type="email" name="email" placeholder={t('form.email') ?? 'Email'}
+        <input required type="email" name="email" placeholder={t('form.email') || 'Email'}
                style={{ padding: 12, border: '1px solid #ddd', borderRadius: 8 }} />
-        <textarea required name="message" rows={5} placeholder={t('form.msg') ?? 'Сообщение'}
+        <textarea required name="message" rows={5} placeholder={t('form.msg') || 'Сообщение'}
                   style={{ padding: 12, border: '1px solid #ddd', borderRadius: 8 }} />
         <button type="submit"
                 style={{ padding: '12px 16px', border: 0, borderRadius: 10, background: '#111', color: '#fff', cursor: 'pointer' }}>
-          {t('form.submit') ?? 'Отправить'}
+          {t('form.submit') || 'Отправить'}
         </button>
       </form>
     </main>

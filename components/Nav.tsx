@@ -8,12 +8,12 @@ export default function Nav() {
   return (
     <nav className="nav">
       <div className="nav-inner container">
-        <Link href="/" className="font-semibold">{t.brand}</Link>
+        <Link href="/" className="font-semibold">{t('brand')}</Link>
         <div className="menu">
-          <Link href="/(site)/about">{t.nav.about}</Link>
-          <Link href="/business">{t.nav.business}</Link>
-          <Link href="/education">{t.nav.education}</Link>
-          <Link href="/contact">{t.nav.contact}</Link>
+          <Link href="/(site)/about">{t('nav.about')}</Link>
+          <Link href="/business">{t('nav.business')}</Link>
+          <Link href="/education">{t('nav.education')}</Link>
+          <Link href="/contact">{t('nav.contact')}</Link>
         </div>
         <LangSwitch />
       </div>

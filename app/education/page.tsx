@@ -1,3 +1,10 @@
-export const metadata = { title: 'Образование' };
 import EducationClient from './EducationClient';
-export default function EducationPage(){ return <EducationClient/> }
+
+export const metadata = {
+  title: 'Образование | Igor Smirnov',
+  description: 'Образование, курсы, сертификаты, повышение квалификации.',
+};
+
+export default function Page() {
+  return <EducationClient />;
+}

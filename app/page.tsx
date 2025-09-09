@@ -1,10 +1,10 @@
-import BusinessPageClient from './BusinessPageClient';
+import HomeClient from './HomeClient';
 
 export const metadata = {
-  title: 'Бизнес-консалтинг | Igor Smirnov',
-  description: 'Бизнес-консалтинг: дистрибуция ГСМ и теххимии, автоматизация, финансы, стратегия, опыт в 3 странах с 2006 года.',
+  title: 'Igor Smirnov — Psychologist',
+  description: 'Гештальт-терапевт, ТА. Консультации RU/PL/EN. Wrocław и онлайн.',
 };
 
 export default function Page() {
-  return <BusinessPageClient />;
+  return <HomeClient />;
 }

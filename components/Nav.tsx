@@ -8,21 +8,25 @@ import ThemeToggle from './ThemeToggle';
 export default function Nav(){
   const { t } = useI18n();
   return (
-    <nav className="nav-glass">
-      <div className="container h-14 flex items-center justify-between">
-        <Link href="/" className="font-semibold">{t('brand')}</Link>
-        <div className="hidden md:flex gap-5 text-sm">
-          <Link href="/about"      className="hover:underline">{t('nav.about')}</Link>
-          <Link href="/business"   className="hover:underline">{t('nav.business')}</Link>
-          <Link href="/education"  className="hover:underline">{t('nav.education')}</Link>
-          <Link href="/blog"       className="hover:underline">{t('nav.blog')}</Link>
-          <Link href="/contact"    className="hover:underline">{t('nav.contact')}</Link>
+    <div className="nav-wrap">
+      <nav className="nav">
+        <div className="nav-inner">
+          <Link href="/" className="brand">{t('brand')}</Link>
+
+          <div className="nav-menu">
+            <Link href="/about">{t('nav.about')}</Link>
+            <Link href="/business">{t('nav.business')}</Link>
+            <Link href="/education">{t('nav.education')}</Link>
+            <Link href="/blog">{t('nav.blog')}</Link>
+            <Link href="/contact">{t('nav.contact')}</Link>
+          </div>
+
+          <div className="nav-actions">
+            <LangSwitch />
+            <ThemeToggle />
+          </div>
         </div>
-        <div className="flex items-center gap-2">
-          <LangSwitch />
-          <ThemeToggle />
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 }

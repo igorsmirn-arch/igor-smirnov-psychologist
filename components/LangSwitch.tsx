@@ -8,12 +8,12 @@ export default function LangSwitch(){
     <button
       key={code}
       onClick={()=>setLang(code)}
-      className={`px-2 py-1 rounded ${lang===code ? 'bg-black text-white dark:bg-white dark:text-black' : 'border'}`}>
+      className={`px-2.5 py-1 rounded-full text-xs ${lang===code ? 'bg-black text-white dark:bg-white dark:text-black' : 'border border-black/10 dark:border-white/20'}`}>
       {label}
     </button>
   );
   return (
-    <div className="flex gap-2">
+    <div className="flex items-center gap-1.5">
       {btn('ru','RU')}
       {btn('pl','PL')}
       {btn('en','EN')}

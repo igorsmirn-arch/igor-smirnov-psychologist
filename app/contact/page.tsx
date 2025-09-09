@@ -2,7 +2,7 @@ import ContactClient from './ContactClient';
 
 export const metadata = {
   title: 'Контакты | Igor Smirnov',
-  description: 'Адрес, карта, форма записи на консультацию.',
+  description: 'Связаться с психологом: форма, email, мессенджеры.',
 };
 
 export default function Page() {

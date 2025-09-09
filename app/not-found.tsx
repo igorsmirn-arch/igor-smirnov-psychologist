@@ -1,7 +1,4 @@
-
-
-# если файла нет, создадим минимальный not-found.tsx
-[ -f app/not-found.tsx ] || cat > app/not-found.tsx << 'EOF'
+cat > app/not-found.tsx << 'EOF'
 export default function NotFound() {
   return (
     <div style={{ padding: 32 }}>
